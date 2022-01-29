@@ -1,6 +1,6 @@
 ## mini app for comment moderation
 
-###### Project testing on Ubuntu 20.04 and Python3.8
+###### Project was run on Ubuntu 20.04 and Python3.8
 
 ### How to setting
  - Create a new virtual environment:
