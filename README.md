@@ -31,7 +31,7 @@ pip3 install -r requirements.txt
 python3 utils/server.py         
 ```
 
-### Рow to test the algorithm
+### How to test the algorithm
 
 ##### Open new terminal, activate v_env and run command:
 ```
