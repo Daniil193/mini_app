@@ -26,14 +26,14 @@ class CommentInfo():
     @staticmethod
     def get_urls_from_comment(comment: str) -> str:
         """
-        Regular expression for extracting urls from comment, url NOT contain "tradingview.com/"
+        Regular expression for extracting urls from comment, url NOT contain "your_website.com//"
 
         :param comment: User's comment
         :return: urls from comment
         """
         regx = r"http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+"
         urls = re.findall(regx, comment)
-        filtered_urls = [i for i in urls if "tradingview.com/" not in i]
+        filtered_urls = [i for i in urls if "your_website.com/" not in i]
         
         return " ]|[ ".join(filtered_urls)
     
